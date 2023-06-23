@@ -1,0 +1,1 @@
+xin chao, dang them noi dung vao readme, hay doc toi nhe!
