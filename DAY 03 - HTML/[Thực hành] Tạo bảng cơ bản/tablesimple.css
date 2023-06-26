@@ -1,0 +1,22 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+
+td, th {
+    border: 1px solid #E7B10A;
+    text-align: center;
+    padding: 8px;
+}
+
+
+tr:nth-child() {
+    background-color: #E7B10A;
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+  }
