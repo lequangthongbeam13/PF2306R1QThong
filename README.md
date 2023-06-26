@@ -1,1 +1,1 @@
-xin chao, dang them noi dung vao readme, hay doc toi nhe!
+Xin chào, Đây là các nội dung thực hành và bài tập của Q. Thông
