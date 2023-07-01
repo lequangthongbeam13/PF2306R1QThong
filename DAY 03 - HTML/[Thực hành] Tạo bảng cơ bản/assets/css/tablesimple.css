@@ -1,0 +1,10 @@
+
+  #contact-table {
+    width:100%;
+  }
+  #contact-table tr th {
+    text-align: left ;
+  }
+  #contact-table tr:nth-child(odd) {
+    background-color:lightgrey;
+  }
