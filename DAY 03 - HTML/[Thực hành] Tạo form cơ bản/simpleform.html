@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMPLE FORM</title>
 </head>
+
 <body>
-    <form method="get" action="style.css" class= "wufoo">
-        <h2>Order Form</h2> 
-        <p>What would you like to buy?</p>
+    <header></header>
+    <main>
+        <h2>Order Form</h2>
+        <form action="#"> 
+            <p>What would you like to buy?</p>
 
-        <!--SELECT OPTION-->
-        <select>
-            <option value="">A</option>
-            <option>B (+0.5$)</option>
-            <option>C (+0.5$)</option>
-        </select>
+            <!--SELECT OPTION-->
+            <select name="product-name">
+                <option value="A">A</option>
+                <option>B (+0.5$)</option>
+                <option>C (+0.5$)</option>
+            </select>
 
-<!--RADIO BUTTON-->
-        <p>How many would you like to order?</p>
-        <input type="radio" name ="rd"/> 1 -$10 <br/>
-        <input type="radio" name ="rd"/> 2 -$25 <br/>
-        <input type="radio" name ="rd"/> 3 -$25 <br/>
-<!--DẤU SAO-->
-<p>Name <span style="color: blueviolet;">*</span> </p>
+            <!--RADIO BUTTON-->
+            <p>How many would you like to order?</p>
+            <input type="radio" name ="amount" value="1"> 1 -$10 <br/>
+            <input type="radio" name ="amount" value="2"> 2 -$25 <br/>
+            <input type="radio" name ="amount" value="3"> 3 -$30 <br/>
+            <!--DẤU SAO-->
+            <p>Name <span style="color: blueviolet;">*</span> </p>
 
-<!--TEXTFIELD-->
-<input type="text" name="firstName" placeholder="First Name" size="15">
-<input type="text" name="lastname" placeholder="Last Name" size="15">
-<p>EMAIL</p>
-<input type="email" name="email" placeholder="abc@mail.com" size="15"> 
-<p>Phone Number</p>
-<input type="tel" name="phone" placeholder="0123456789" size="15">
-<BR>
-<BR>
+            <!--TEXTFIELD-->
+            <input type="text" name="firstName" placeholder="First Name" size="15">
+            <input type="text" name="lastname" placeholder="Last Name" size="15">
+            <p>EMAIL</p>
+            <input type="email" name="email" placeholder="abc@mail.com" size="30"> 
+            <p>Phone Number</p>
+            <!--<input type="tel" name="tel left" size="5"> - <input type="tel" name="tel left" size="5"> - <input type="tel" name="tel left" size="5"-->
+            <br>
+            <input type="tel" name="phone" placeholder="0123456789" size="15">
+            <BR>
+            <BR>
 
-<!--sumbmit-->
-<p><input type="button" name="btsumit" value="SUBMIT"></p>
-
-<!--style-->
-
-
-
-
-
-
-    </form>
+            <!--sumbmit-->
+            <input type="submit">
+        </form>
+    </main>
+    <footer></footer> 
 </body>
+
 </html>
 
