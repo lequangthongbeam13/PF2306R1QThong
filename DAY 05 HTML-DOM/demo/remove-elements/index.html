@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id = "content">
+        <p id = "first-para"> This is first paragraph</p>
+        <p id = "second-para"> This is second paragraph</p>
+        <p> THIS CONTENT WILL NOT BE REMOVE</p>
+    </div>
+    <script>
+        let contentDiv = document.getElementById ("content");
+        let firstPara = document.getElementById ("first-para");
+        let secondPara = document.getElementById ("second-para");
+        let pTag = document.getElementsByTagName ("p");
+
+        // // Method 1
+        // firstPara.remove();
+
+        // //Method 2
+        // contentDiv.removeChild(secondPara);
+        // contentDiv.removeChild(ptag)
+
+        for (const key in pTag) {
+            console.log (pTag[key]);
+            contentDiv.remove (pTag[key]);
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

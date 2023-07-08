@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="comtainer" id = "content">
+        <p id = "first-para"> This is first paragraph</p>
+        <p id = "second-para"> This is second paragraph</p>
+    </div>
+    <script>
+        // get cotent container
+        let contentDiv = document.getElementById("content");
+        let firstPara = document.getElementById("first-para");
+        // Method 1:
+        // create a new div and add it into the container
+        const introParagraph = document.createElement("p");
+        introParagraph.innerText = "Third paragraph";
+        // add to the bottom
+        contentDiv.appendChild(introParagraph)
+        // add before an element
+        contentDiv.insertBefore(introParagraph,firstPara);
+
+
+        // Method 2 
+
+
+
+    </script>
+    
+</body>
+</html>

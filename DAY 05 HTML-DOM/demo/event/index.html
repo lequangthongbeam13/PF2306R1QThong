@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>Hello World</p>
+        <button onclick="btnHandler()">Click me</button>
+        <button onclick="btnClicker(this)">Click me 2</button>
+        <button id="btnClick"= >Click Me 3 ! </button>
+        <div id="result"></div>
+    </div>
+    <script>
+        let result = document.getElementById("result");
+        let btnClick = document.getElementById("btnClick");
+        let count = 0
+        result.innerText = count;
+
+        // eventHandeler 01 -  Function without parameters
+        function btnHandler() {
+            count++;
+            result.innerText = count;
+            btnClick.style.background = "#ffff" + count
+
+        }
+
+            // eventHandeler 02 - Function with parameters
+
+            function btnClicker(obj) {
+                console.log(obj);
+                obj.innerText ="clicked"+ " " + count++;
+
+            }
+            // eventHandeler 03 - DOM ID
+            btnClick.addEventListener("click", function() {
+
+              console.log("Clicked btn 3")
+              count++;
+            result.innerText = count;
+            }
+
+
+    </script>
+
+
+</body>
+
+</html> 

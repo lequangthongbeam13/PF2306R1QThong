@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIEM TRA NAM NHUAN</title>
+</head>
+
+<body>
+    <p>ENTER A YEAR</p>
+    <input type="number" id="year" onchange="inputYear(this.value)">
+    <button>CHECK</button>
+
+    <script>
+        function inputYear(obj) {
+            let year = parseInt(document.getElementById("year"))
+            if (obj % 4 == 0) {
+                if (obj % 100 == 0) {
+                    if (obj % 400 == 0) {
+                        alert(obj + " is a leap year");
+                    } else {
+                        alert(obj + " is Not a leap year");
+                    }
+                } else {
+                    alert(obj + " is a leap year");
+                }
+            } else {
+                alert(obj + " is NOT a leap year");
+            }
+        }
+                                    
+        
+
+    </script>
+</body>
+
+</html>

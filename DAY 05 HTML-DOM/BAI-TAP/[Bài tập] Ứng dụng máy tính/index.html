@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNG DUNG MAY TINH</title>
+</head>
+<body>
+    <h1> Caculator</h1>
+    <input id="first-number" type ="number">
+    <input id="second-number" type ="number">
+    <br> <br>
+
+    <button id="button" onclick="Add(this)">Addition(+)</button>
+    <button id="button" onclick="Sub(this)">Subtraction(-)</button>
+    <button id="button" onclick="Mul(this)">Multiplication(X)</button>
+    <button id="button" onclick="Div(this)">Division(/)</button>
+    <p id = "result"></p>
+    
+    <script>
+        let num1; num2; result; Addition
+        
+        function Add(obj){
+             num1 = document.getElementById("first-number").value;
+             num2 = document.getElementById("second-number").value;
+             result = document.getElementById('result').innerText;
+             Addition = parseInt(num1) + parseInt(num2);
+             document.getElementById('result').innerText = Addition;
+            
+        }
+
+        function Sub(){
+             num1 = document.getElementById("first-number").value;
+             num2 = document.getElementById("second-number").value;
+             result = document.getElementById('result').innerText;
+             Addition = parseInt(num1) - parseInt(num2);
+             document.getElementById('result').innerText = Addition;
+        }
+
+        function Mul(){
+             num1 = document.getElementById("first-number").value;
+             num2 = document.getElementById("second-number").value;
+             result = document.getElementById('result').innerText;
+             Addition = parseInt(num1) * parseInt(num2);
+             document.getElementById('result').innerText = Addition;
+        }
+
+        function Div(){
+             num1 = document.getElementById("first-number").value;
+             num2 = document.getElementById("second-number").value;
+             result = document.getElementById('result').innerText;
+             Addition = parseInt(num1) / parseInt(num2);
+             document.getElementById('result').innerText = Addition;
+        }
+    </script>
+    
+
+
+    
+</body>
+</html> 
