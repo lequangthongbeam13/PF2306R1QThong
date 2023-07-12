@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toan tu 3 ngoi bai 1</title>
+</head>
+<body>
+    <input type ="number" id ='first-number' placeholder="Nhap so a" > <br>
+    <input type = "number" id ='second-number' placeholder="Nhap so b"> 
+    <button id ='button' onclick ="Add(this)">CHECK</button>
+    
+    <script>
+        let num1, num2, Addition
+        function Add(obj) {
+            num1 = document.getElementById('first-number').value
+            num2 = document.getElementById('second-number').value
+            Addition = parseFloat(num1) + parseFloat (num2)
+            result = Addition<4? 'Below' :'Over'
+            alert ("Tong la " + Addition + " ->" + result)
+            
+        }
+
+        
+        
+
+        
+
+
+    </script>
+</body>
+</html>
