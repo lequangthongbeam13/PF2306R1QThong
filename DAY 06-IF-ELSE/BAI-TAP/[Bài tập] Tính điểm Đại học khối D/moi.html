@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id = "selectedValue">
+        <option value = "0">Chon khu vuc</option>
+        <option value = "1">A</option>
+        <option value = "2">B</option>
+        <option value = "3">C</option>
+    </select>
+    <p id ="result">Ket qua la</p>
+    <script>
+        let selectElement = document.getElementById("selectedValue")
+        selectElement.addEventListener ("change", changeFunction);
+        diemToan = 10
+
+        function changeFunction(){
+            let myValue = document.getElementById("selectedValue").value
+            result.innerHTML = parseFloat(myValue) +diemToan
+            //alert(parseFloat(myValue));
+            
+        }
+        
+
+
+    </script>
+</body>
+</html>

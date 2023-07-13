@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Giá Hoa Quả</h2>
+    <input onchange="checkFruit(this)" id="input-fruit" type="text" name="fruit" placeholder="Nhập hoa hỏa cần tìm giá"
+        size="24">
+    <button>Xem Giá</button>
+    <p id="result">Giá Là:</p>
+    <script>
+        let oi = "20000VNĐ/kg"
+        let duahau = "20000 VNĐ/kg"
+        let tao = "30000 VNĐ/kg"
+        let xoai = "30000 VNĐ/kg"
+        let cam = "40000 VNĐ/kg"
+        let chomchom = "40000 VNĐ/kg"
+        let mangcut = "50000 VNĐ/kg"
+        let other = "Không có giá của loại này"
+        let result = document.getElementById("result")
+
+        let inputFruit = document.getElementById("input-fruit")
+        function checkFruit(obj) {
+            obj = document.getElementById("input-fruit")
+            switch (obj.value) {
+                case (obj.value = "Ổi"):
+                    result.innerText = oi
+                    break;
+                case (obj.value = "Dưa hấu"):
+                    result.innerText = duahau
+                    break;
+                case (obj.value = "Táo"):
+                    result.innerText = tao
+                    break;
+                case (obj.value = "Xoài"):
+                    result.innerText = xoai
+                    break;
+                case (obj.value = "Cam"):
+                    result.innerText = cam
+                    break;
+                case (obj.value = "Chôm chôm"):
+                    result.innerText = chomchom
+                    break;
+                case (obj.value = "Măng cụt"):
+                    result.innerText = mangcut
+                    break;
+                default:
+                    result.innerText = other
+            }
+        }
+    </script>
+</body>
+
+</html>

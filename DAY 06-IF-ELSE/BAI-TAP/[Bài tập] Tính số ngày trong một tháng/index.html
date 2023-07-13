@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÍNH SỐ NGÀY TRONG THÁNG</title>
+</head>
+
+<body>
+    <input size="900" type="number" max="12" id="month" placeholder="Please enter a month">
+    <button id="btnCheck">Search</button>
+    <p id="result"></p>
+    <script>
+        let month = document.getElementById("month").value;
+        let result = document.getElementById("result")
+
+        btnCheck = document.getElementById("btnCheck")
+        btnCheck.addEventListener("click", myFunction);
+        function myFunction() {
+            monthCheck = document.getElementById("month").value;
+            switch (monthCheck) {
+                case "1":
+                case "3":
+                case "5":
+                case "7":
+                case "8":
+                case "10":
+                case "12":
+                    result.innerHTML = ("Thang " + monthCheck + " co 31 ngay")
+                    break;
+                case "4":
+                case "6":
+                case "9":
+                case "11":
+                    result.innerHTML = ("Thang " + monthCheck + " co 30 ngay")
+                    break;
+                case "2":
+                result.innerHTML = ("Thang " + monthCheck + " co 28 hoac 29 ngay")
+                break;
+                default:
+                result.innerHTML = ("Thang Khong Hop Le")
+                break;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

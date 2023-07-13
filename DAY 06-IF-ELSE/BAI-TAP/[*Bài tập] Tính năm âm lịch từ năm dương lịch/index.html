@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tính năm âm lịch từ năm dương lịch</title>
+</head>
+
+<body>
+	<label>Nhập Năm Dương Lịch</label> <br>
+	<input placeholder="nhap nam" type="number" id="duong-lich">
+	<button id="btnClick" onclick="myFunction()">Đổi ra năm Âm lịch</button>
+	<script>
+
+		function myFunction() {
+			let namDuong = parseInt(document.getElementById("duong-lich").value)
+			let tinhCan = (namDuong % 10)
+			let tinhChi = (namDuong % 12)
+			let namAmlich = tinhCan + tinhChi
+
+			switch (tinhCan) {
+				case 0:
+					alert("Canh")
+					break;
+				case 1:
+					alert("Tân")
+					break
+				case 2:
+					alert("Nhâm")
+					break
+				case 3:
+					alert("Quý")
+					break
+				case 4:
+					alert("Giáp")
+					break
+				case 5:
+					alert("Ất")
+					break
+				case 6:
+					alert("Bính")
+					break
+				case 7:
+					alert("Đinh")
+					break
+				case 8:
+					alert("Mậu")
+					break
+				case 9:
+					alert("Kỷ")
+					break
+			}
+
+			switch (tinhChi) {
+				case 0:
+					alert("Thân")
+					break;
+				case 1:
+					alert("Dậu")
+					break
+				case 2:
+					alert("Tuất")
+					break
+				case 3:
+					alert("Hợi")
+					break
+				case 4:
+					alert("Tý")
+					break
+				case 5:
+					alert("Sửu")
+					break
+				case 6:
+					alert("Dần")
+					break
+				case 7:
+					alert("Mẹo")
+					break
+				case 8:
+					alert("Thìn")
+					break
+				case 9:
+					alert("Tỵ")
+					break;
+
+					
+			}
+
+
+
+
+
+		}
+
+	</script>
+</body>
+
+</html>

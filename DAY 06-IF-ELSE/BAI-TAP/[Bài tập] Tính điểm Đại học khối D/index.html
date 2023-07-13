@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Điểm ĐH</title>
+</head>
+
+<body>
+    <table>
+        Môn Toán <input id="diemToan" type="number"> <br> <br>
+        Môn Văn <input id="diemVan" type="number"> <br> <br>
+        Môn Anh <input id="diemAnh" type="number"> <br> <br>
+        Khu Vực <select id="khuVuc">
+            <option value="0">Chọn Khu Vực</option>
+            <option value="0.75" id="KV1">KV1</option>
+            <option value="0.5" id="KV2"> KV2</option>
+            <option value="0.25" id="KV2-NT">KV2-NT</option>
+            <option value="0" id="KV3">KV3</option>
+        </select> <br> <br>
+        <button onclick="tinhTong(this)" id="button">Tính Điểm</button>
+        <p id="result"> </p>
+    </table>
+    <script>
+        let diemToan = document.getElementById("diemToan")
+        let diemVan = document.getElementById("diemVan")
+        let diemAnh = document.getElementById("diemAnh")
+        let diemCong = document.getElementById("khuVuc")
+        let button = document.getElementById("button");
+        let result = document.getElementById("result")
+        diemCong.addEventListener("change", changeFunction)
+        function changeFunction() {
+            myValue = document.getElementById("khuVuc").value
+        }
+        function tinhTong(obj) {
+            let tongBamon = parseFloat(diemToan.value) + parseFloat(diemVan.value) + parseFloat(diemAnh.value)
+            let tongDiem3mon = parseFloat(myValue) +tongBamon
+            result.innerHTML = ("Tổng điểm 3 môn là: ") + tongDiem3mon
+        }
+    </script>
+
+</body>
+
+</html>
