@@ -17,76 +17,82 @@
 			let namDuong = parseInt(document.getElementById("duong-lich").value)
 			let tinhCan = (namDuong % 10)
 			let tinhChi = (namDuong % 12)
-			let namAmlich = tinhCan + tinhChi
+			let can, chi
+			let result = can + chi
+			
 
 			switch (tinhCan) {
+				
 				case 0:
-					alert("Canh")
+					can=("Canh")
 					break;
 				case 1:
-					alert("Tân")
+					can=("Tân")
 					break
 				case 2:
-					alert("Nhâm")
+					can=("Nhâm")
 					break
 				case 3:
-					alert("Quý")
+					can=("Quý")
 					break
 				case 4:
-					alert("Giáp")
+					can=("Giáp")
 					break
 				case 5:
-					alert("Ất")
+					can=("Ất")
 					break
 				case 6:
-					alert("Bính")
+					can=("Bính")
 					break
 				case 7:
-					alert("Đinh")
+					can=("Đinh")
 					break
 				case 8:
-					alert("Mậu")
+					can=("Mậu")
 					break
 				case 9:
-					alert("Kỷ")
+					can=("Kỷ")
 					break
 			}
 
 			switch (tinhChi) {
 				case 0:
-					alert("Thân")
+					chi=("Thân")
 					break;
 				case 1:
-					alert("Dậu")
+					chi=("Dậu")
 					break
 				case 2:
-					alert("Tuất")
+					chi=("Tuất")
 					break
 				case 3:
-					alert("Hợi")
+					chi=("Hợi")
 					break
 				case 4:
-					alert("Tý")
+					can=("Tý")
 					break
 				case 5:
-					alert("Sửu")
+					chi=("Sửu")
 					break
 				case 6:
-					alert("Dần")
+					chi=("Dần")
 					break
 				case 7:
-					alert("Mẹo")
+					chi=("Mẹo")
 					break
 				case 8:
-					alert("Thìn")
+					chi=("Thìn")
 					break
 				case 9:
-					alert("Tỵ")
+					chi=("Tỵ")
 					break;
 
-					
+				
+				
 			}
-
+		
+			console.log(result);
+		
 
 
 

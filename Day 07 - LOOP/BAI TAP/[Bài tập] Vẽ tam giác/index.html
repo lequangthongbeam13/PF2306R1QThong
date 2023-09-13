@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vẽ Tam Giác</title>
+	<script>
+		// hinh 1
+		let h = 5;
+		for (let i = 1; i <= h; i++) {
+			for (let j = 1; j <= i; j++) {
+				document.write(j);
+			}
+			document.write("<br>")
+		}
+
+		document.write("<br>");
+		// Hinh 2
+		let h2 = 1
+		for (let a = 5; a >= h2; a--) {
+			for (let b = 1; b <= a; b++) {
+				document.write("*")
+			}
+			document.write("<br>")
+		}
+
+		document.write("<br>");
+
+		// hinh 3
+
+		let h3 = 5
+		for (let c = 1; c <= h3; c++) {
+			for (let d = 1; d <= h3; d++) {
+				if (d <= h3 - c){
+					document.write(" &nbsp ")
+				}else 
+					document.write("*")
+			}
+            document.write("<br>")
+		}
+
+		document.write("<br>");
+
+		//hinh 4
+
+		let h4 = 5
+		for (let e = 1;e <= h4; e++){
+			for (f = 1; f<= h4; f++){
+				if (f < e) {
+					document.write(" &nbsp ")
+				}else
+					document.write ("*")
+				}
+				document.write("<br>")
+			}
+
+			document.write("<br>")
+		
+	</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

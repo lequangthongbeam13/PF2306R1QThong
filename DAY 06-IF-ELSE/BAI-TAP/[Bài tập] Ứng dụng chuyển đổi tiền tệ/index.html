@@ -15,15 +15,15 @@
 	<label>From Currency</label><br>
 	<select id="select1" size="1.5">
 		<option>Select Currency</option>
-		<option value ="a">Vietnam Dong</option>
-		<option value ="b">USD</option>
+		<option value="a">Vietnam Dong</option>
+		<option value="b">USD</option>
 	</select> <br><br>
 
 	<label>To Currency</label><br>
 	<select id="select2" size="1.5">
 		<option>Select Currency</option>
-		<option value ="b">USD</option>
-		<option value ="a">Vietnam Dong</option>
+		<option value="b">USD</option>
+		<option value="a">Vietnam Dong</option>
 	</select> <br><br>
 
 	<button id="convert">Convert</button>
@@ -36,13 +36,14 @@
 			let inputAmount = document.getElementById("Amount").value
 			let select1 = document.getElementById("select1").value
 			let select2 = document.getElementById("select2").value
-			let vndTousd = parseFloat(inputAmount*0.000042)
-			let usdTovnd = parseFloat(inputAmount*23662)
+			let vndTousd = parseFloat(inputAmount * 0.000042)
+			let usdTovnd = parseFloat(inputAmount * 23662)
 			if (select1 == select2) {
 				alert(inputAmount)
-			} else if (select1 == "a" && select2 == "b"){
+			} else if (select1 == "a" && select2 == "b") {
 				alert(vndTousd)
-			}else{ (select1 == "b" && select2 == "b")
+			} else {
+				(select1 == "b" && select2 == "a")
 				alert(usdTovnd)
 
 			}
